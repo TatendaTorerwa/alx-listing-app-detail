@@ -1,16 +1,3 @@
-// interfaces/index.ts
-
-export interface CardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-}
-
-export interface ButtonProps {
-  text: string;
-  onClick: () => void;
-}
-
 export interface PropertyProps {
   name: string;
   address: {
@@ -28,4 +15,5 @@ export interface PropertyProps {
   };
   image: string;
   discount: string;
+  description?: string; // Optional field for property description
 }

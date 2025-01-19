@@ -1,22 +1,3 @@
-export interface PropertyProps {
-  name: string;
-  address: {
-    state: string;
-    city: string;
-    country: string;
-  };
-  rating: number;
-  category: string[];
-  price: number;
-  offers: {
-    bed: string;
-    shower: string;
-    occupants: string;
-  };
-  image: string;
-  discount: string;
-}
-
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
@@ -53,6 +34,24 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image2.jpg",
     discount: "30"
+  },
+  {
+    name: "Cozy Apartment",
+    rating: 4.5,
+    address: {
+      city: "New York",
+      country: "USA"
+    },
+    image: "/images/cozy-apartment.jpg", // Relative image path
+    description: "A cozy and modern apartment located in the heart of the city, close to all amenities.",
+    category: ["WiFi", "Air Conditioning", "Parking", "Gym"],
+    price: 2000,
+    offers: {
+      bed: "2",
+      shower: "1",
+      occupants: "2-4"
+    },
+    discount: ""
   },
   {
     name: "Cozy Desert Retreat",
